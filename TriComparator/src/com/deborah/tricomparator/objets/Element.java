@@ -22,12 +22,18 @@ public class Element implements Comparable<Element>  {
 	public String toString() {
 		return  key + ", " + value  ;
 	}
+
+	public void setKey(int key) {
+		this.key = key;
+	}
+
 	@Override
 	public int compareTo(Element element) {
 		
 		if(this.key < element.key) {
 			return -1;
 		}
+
 		if(this.key > element.key) {
 			return 1;
 		}

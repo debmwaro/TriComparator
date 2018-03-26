@@ -44,8 +44,10 @@ public static void create(ArrayList<ResultTri> list) {
 		try{
 			fichier.createNewFile();
 			BufferedWriter bw = new BufferedWriter(new FileWriter(fichier));
+			bw.write("Taille   ; Fusion ; Bulle ; Denombrement");
 			for(ResultTri resultTri : list) {
 				bw.write(resultTri.toString());
+				System.out.println(resultTri.toString());
 				bw.newLine();
 			}
 			bw.close();
@@ -54,6 +56,12 @@ public static void create(ArrayList<ResultTri> list) {
 		}
 		
 		
+	}
+
+	public static void echanger(Element [] list,int i,int j) {
+		Element temp = list[i];
+		list[i] = list[j];
+		list[j] = temp;
 	}
 
 }

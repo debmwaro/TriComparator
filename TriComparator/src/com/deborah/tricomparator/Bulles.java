@@ -4,7 +4,7 @@ public class Bulles {
 	
 private static final Bulles Instance = new Bulles();
 	
-	public static Bulles getInstance() {
+	public static  Bulles getInstance() {
 		return Instance;
 	}
 	
