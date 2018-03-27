@@ -28,3 +28,5 @@ public class TriBulle {
 		return comparaison+affectation;
 	}
 }
+
+i = 0
